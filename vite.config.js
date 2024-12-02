@@ -9,13 +9,12 @@ const vitePWA = VitePWA({
     id: "/",
     name: "Jornada Milhas",
     short_name: "Jornada",
-    start_url: "/",
-    display: "standalone",
-    background_color: "#09001a",
     theme_color: "#5a189a",
-    description:
-      "Jornada Milhas: seu guia de viagens para aventuras sem limites!",
+    background_color: "#09001a",
+    display: "standalone",
+    description: "Site do Jornada Milhas",
     orientation: "portrait",
+    start_url: "/",
     icons: [
       {
         src: "/icon-192x192.png",
@@ -40,7 +39,6 @@ const vitePWA = VitePWA({
       },
     ],
   },
-  // devOptions: { enabled: true },
 });
 
 // https://vitejs.dev/config/

@@ -12,7 +12,8 @@ Neste estágio de desenvolvimento, o site possui as seguintes funcionalidades:
 
 - Página estática com pacotes de viagens
 - Responsividade para diferentes dispositivos
-- Outras funcionalidades em breve
+- Roteamento de páginas com React Router DOM
+- A aplicação já é uma PWA, pode ser instalada e funcionar totalmente offline e em baixas conexões de rede
 
 O [Figma dessa aplicação você encontra aqui](https://www.figma.com/file/C9Hwa6VpPKLSM6pJVCMZgI/Jornada-Milhas-%7C-React-Service-Workers?type=design&node-id=0-1&mode=design&t=rZNRLbySPNz2Ugjf-0).
 
@@ -26,6 +27,7 @@ O projeto utiliza as seguintes tecnologias e bibliotecas:
 - `Workbox` - Biblioteca para criação e gerenciamento de PWA's
 - `JavaScript` - Linguagem de programação principal
 - `Styled Components` - Ferramenta de estilização do nosso projeto
+- `Firebase Cloud Messaging` - Serviçoes de mensagens push do Firebase
 - `Figma` - Para prototipagem do projeto
 
 E muito mais...
@@ -43,7 +45,7 @@ Para executar o projeto em seu ambiente local, siga estas etapas:
 4. Navegue até a pasta em questão via terminal (cmd):
 
 ```bash
-cd react-pwa
+cd 3787-react-pwa
 ```
 
 5. Instale as dependências usando o npm:
