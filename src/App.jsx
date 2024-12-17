@@ -1,15 +1,18 @@
 import Header from "./components/Header";
 import { Outlet } from "react-router-dom";
 import Footer from "./components/Footer";
-import useNotification from "./hooks/useNotification";
 import NotificationButton from "./components/NotificationButton";
+import { requestToken, onMessageListener } from "./firebase";
+import { useEffect } from "react";
 
 function App() {
-  const { sendTestNotification } = useNotification();
+  useEffect(() => {
+    onMessageListener();
+  }, []);
   return (
     <>
       <Header />
-      <NotificationButton action={sendTestNotification} />
+      <NotificationButton action={requestToken} />
       <Outlet />
       <Footer />
     </>
