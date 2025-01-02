@@ -60,6 +60,13 @@ npm install
 npm run dev
 ```
 
+## Rodar o banco de dados
+
+```bash
+npx json-server db.json
+```
+
+
 ## 📚 Mais informações do curso
 
 Gostou do projeto e quer conhecer mais?
